@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732 470" role="img" aria-label="WayVeil mark">
+<defs>
+<linearGradient id="mint" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#38c6a8"/><stop offset=".55" stop-color="#59e0c1"/><stop offset="1" stop-color="#71f6d3"/></linearGradient>
+<filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#00e5bb" flood-opacity=".16"/></filter>
+</defs>
+<path d="M 17 19 L 241 452 L 338 260 L 363 189 L 380 150 L 359 105 L 313 19 L 227 19 L 306 169 L 244 292 L 199 197 L 109 19 Z" fill="#fff" filter="url(#soft)"/>
+<path d="M 718 20 L 631 21 L 492 292 L 442 195 L 438 191 L 419 254 L 410 294 L 495 457 Z" fill="url(#mint)" filter="url(#soft)"/>
+<path d="M 351 398 L 331 390 L 307 428 L 277 461 L 317 461 L 340 423 Z" fill="url(#mint)" filter="url(#soft)"/>
+<path d="M 369 279 L 366 280 L 354 330 L 346 354 L 366 362 L 376 331 L 386 286 L 383 283 Z" fill="url(#mint)" filter="url(#soft)"/>
+<path d="M 417 169 L 398 169 L 384 214 L 376 236 L 397 244 L 408 211 Z" fill="url(#mint)" filter="url(#soft)"/>
+<path d="M 459 87 L 444 86 L 421 124 L 415 137 L 436 142 L 454 111 Z" fill="url(#mint)" filter="url(#soft)"/>
+<path d="M 504 22 L 486 22 L 463 57 L 477 64 Z" fill="url(#mint)" filter="url(#soft)"/>
+</svg>
