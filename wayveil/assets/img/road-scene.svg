@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Night road toward a city</title><desc id="desc">A stylized cinematic roadway at night with lane markings and distant city lights.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#041018"/><stop offset=".48" stop-color="#0a1b27"/><stop offset="1" stop-color="#061017"/></linearGradient>
+  <linearGradient id="haze" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0f3441" stop-opacity="0"/><stop offset=".5" stop-color="#45dfc4" stop-opacity=".14"/><stop offset="1" stop-color="#51317d" stop-opacity="0"/></linearGradient>
+  <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0a1015"/><stop offset="1" stop-color="#010306"/></linearGradient>
+  <linearGradient id="mintline" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#1cc5a4"/><stop offset=".5" stop-color="#74f6d8"/><stop offset="1" stop-color="#1cc5a4"/></linearGradient>
+  <filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+  <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<ellipse cx="800" cy="420" rx="650" ry="160" fill="url(#haze)" filter="url(#blur20)"/>
+<g fill="#dce7ec" opacity=".55">
+  <rect x="150" y="365" width="90" height="155"/><rect x="250" y="405" width="64" height="115"/><rect x="1160" y="370" width="78" height="150"/><rect x="1250" y="420" width="52" height="100"/><rect x="1320" y="390" width="85" height="130"/>
+</g>
+<g fill="#7bf6db" opacity=".65" filter="url(#blur8)">
+  <circle cx="210" cy="445" r="8"/><circle cx="290" cy="458" r="5"/><circle cx="1187" cy="445" r="7"/><circle cx="1360" cy="455" r="6"/><circle cx="800" cy="405" r="11"/>
+</g>
+<g fill="#ffb45e" opacity=".75" filter="url(#blur8)">
+  <circle cx="350" cy="470" r="5"/><circle cx="410" cy="455" r="4"/><circle cx="1020" cy="460" r="5"/><circle cx="1090" cy="475" r="4"/>
+</g>
+<path d="M560 900 L735 490 Q800 455 865 490 L1040 900 Z" fill="url(#road)"/>
+<path d="M710 900 L774 505" stroke="#dce7ec" stroke-opacity=".45" stroke-width="5"/>
+<path d="M890 900 L826 505" stroke="#dce7ec" stroke-opacity=".45" stroke-width="5"/>
+<path d="M800 872 L800 735 M800 675 L800 590 M800 555 L800 515" stroke="#f5f2df" stroke-opacity=".8" stroke-width="7" stroke-linecap="round"/>
+<path d="M595 900 L744 505" stroke="url(#mintline)" stroke-width="4" stroke-opacity=".9" filter="url(#glow)"/>
+<g opacity=".8"><circle cx="575" cy="695" r="6" fill="#ff665f"/><circle cx="1020" cy="660" r="5" fill="#ff665f"/></g>
+<rect width="1600" height="900" fill="none" stroke="#ffffff" stroke-opacity=".03" stroke-width="2"/>
+</svg>
