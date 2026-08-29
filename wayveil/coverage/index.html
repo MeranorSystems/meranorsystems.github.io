@@ -61,7 +61,7 @@
               <input id="coverage-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" placeholder="ZIP code" aria-describedby="coverage-search-note">
               <button class="button button-primary" type="submit">Check Coverage <svg class="button-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
             </div>
-            <p id="coverage-search-note">ZIP checks stay in your browser and are not used as navigation identity.</p>
+            <p id="coverage-search-note">ZIP checks use a Census ZCTA representative point, so results are approximate. The lookup stays in your browser and is not used as navigation identity.</p>
             <p class="coverage-search-status" data-search-status role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -72,7 +72,7 @@
       <div class="shell">
         <div class="coverage-section-heading">
           <div><p class="eyebrow"><span class="eyebrow-dot"></span>Explore coverage</p><h2 id="map-title">Coverage you can actually see.</h2></div>
-          <p>Mint areas represent published WayVeil regional navigation coverage. Warm markers represent known ALPR records in the current public snapshot — not a complete inventory of surveillance.</p>
+          <p>Mint outlines show published WayVeil regional package bounds; they do not guarantee every road inside is routable. Warm markers represent known ALPR records in the current public snapshot — not a complete inventory of surveillance.</p>
         </div>
 
         <div class="coverage-map-shell">
@@ -94,7 +94,7 @@
             <p>Unverified records are hidden by default and do not silently become routing-known surveillance.</p>
           </div>
 
-          <div class="map-legend" aria-label="Map legend"><span><i class="legend-swatch mint"></i>Supported coverage</span><span><i class="legend-swatch warm"></i>Known ALPR</span><span><i class="legend-swatch probable"></i>Probable</span></div>
+          <div class="map-legend" aria-label="Map legend"><span><i class="legend-swatch mint"></i>Regional package bounds</span><span><i class="legend-swatch warm"></i>Known ALPR</span><span><i class="legend-swatch probable"></i>Probable</span></div>
 
           <aside class="map-detail-card" data-map-detail hidden aria-live="polite">
             <button class="map-detail-close" type="button" data-detail-close aria-label="Close map details"><svg aria-hidden="true"><use href="#i-close"></use></svg></button>
