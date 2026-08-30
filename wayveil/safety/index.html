@@ -24,6 +24,8 @@
     <symbol id="s-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17 12v3M20 12v2"/></symbol>
     <symbol id="s-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></symbol>
     <symbol id="s-gps" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></symbol>
+    <symbol id="s-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="14" height="11" rx="2"/><circle cx="10" cy="12.5" r="3"/><path d="m17 10 4-2v9l-4-2M6 7l1.5-2h5L14 7"/></symbol>
+    <symbol id="s-community" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c.6-4 2.6-6 6-6s5.4 2 6 6M14.5 15c3.6-.4 5.7 1.3 6.2 4.7"/></symbol>
   </svg>
 
   <a class="skip-link" href="#main">Skip to content</a>
@@ -62,12 +64,6 @@
           <h1>Privacy never outranks <span>safe driving.</span></h1>
           <p class="safety-lead">WayVeil adds privacy context to navigation. It never replaces your attention, judgment, road signs, or responsibility behind the wheel.</p>
 
-          <div class="safety-principles" aria-label="Core safety principles">
-            <span><svg aria-hidden="true"><use href="#s-eye"></use></svg><b>Drive first</b></span>
-            <span><svg aria-hidden="true"><use href="#s-volume"></use></svg><b>Keep guidance glanceable</b></span>
-            <span><svg aria-hidden="true"><use href="#s-park"></use></svg><b>Park to troubleshoot</b></span>
-          </div>
-
           <div class="safety-hero-note">
             <svg aria-hidden="true"><use href="#s-alert"></use></svg>
             <p><b>If guidance seems wrong or unsafe, ignore it.</b> Continue driving safely and legally, then pull over before changing settings, searching, or troubleshooting.</p>
@@ -76,13 +72,24 @@
 
         <figure class="safety-hero-art">
           <div class="safety-road-frame">
-            <img src="../assets/img/safety/safety-hero-road.png" alt="Cinematic mountain road at dusk">
+            <img class="safety-road-image" src="../assets/img/safety/safety-hero-road.png" alt="Cinematic mountain road at dusk">
             <div class="safety-road-shade" aria-hidden="true"></div>
-            <div class="safety-shield" aria-hidden="true">
-              <div class="safety-shield-inner"><img src="../assets/img/wayveil-mark.svg" alt=""></div>
+            <svg class="safety-route-overlay" viewBox="0 0 900 620" aria-hidden="true" preserveAspectRatio="none">
+              <path class="route-glow" d="M858 610 C790 582 728 551 719 506 C708 454 757 423 741 390 C725 356 685 352 667 327 C648 301 659 270 680 247"/>
+              <path class="route-core" d="M858 610 C790 582 728 551 719 506 C708 454 757 423 741 390 C725 356 685 352 667 327 C648 301 659 270 680 247"/>
+              <circle class="route-pip" cx="741" cy="390" r="7"/>
+              <circle class="route-end" cx="680" cy="247" r="5"/>
+            </svg>
+
+            <img class="safety-product-phone" src="../assets/img/home/hero-phone-routes.png" alt="Illustrative WayVeil navigation interface">
+
+            <div class="safety-principles" aria-label="Core safety principles">
+              <span><svg aria-hidden="true"><use href="#s-eye"></use></svg><b>Drive first</b></span>
+              <span><svg aria-hidden="true"><use href="#s-volume"></use></svg><b>Glanceable guidance</b></span>
+              <span><svg aria-hidden="true"><use href="#s-park"></use></svg><b>Park to troubleshoot</b></span>
             </div>
           </div>
-          <figcaption>Illustrative road scene. WayVeil guidance never overrides real-world road conditions or lawful driving decisions.</figcaption>
+          <figcaption>Illustrative interface and road scene — not a live route, coverage result, or safety guarantee.</figcaption>
         </figure>
       </div>
 
@@ -139,6 +146,54 @@
             <div><h3>Privacy context</h3><p>Known ALPR exposure can inform route choice. It never justifies a sudden, illegal, or unsafe maneuver.</p></div>
             <span class="priority-tag">Context</span>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section alerts-section">
+      <div class="shell">
+        <div class="safety-section-heading alerts-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Alerts with purpose</p>
+          <h2>The right alert. <span>At the right moment.</span></h2>
+          <p>Whether you’re driving alone or carrying the people who matter most, WayVeil is designed to surface useful context without demanding your attention.</p>
+        </div>
+
+        <div class="alerts-grid">
+          <article class="alert-card">
+            <span class="alert-icon mint"><svg aria-hidden="true"><use href="#s-camera"></use></svg></span>
+            <p class="alert-kicker">Privacy awareness</p>
+            <h3>Known surveillance ahead</h3>
+            <p>When supported route data shows known ALPR exposure ahead, WayVeil can surface a clear, glanceable warning so you know what’s coming.</p>
+          </article>
+
+          <article class="alert-card">
+            <span class="alert-icon blue"><svg aria-hidden="true"><use href="#s-turn"></use></svg></span>
+            <p class="alert-kicker">Route guidance</p>
+            <h3>Route changes that matter</h3>
+            <p>When your route changes or rerouting is needed, the next driving action stays prominent instead of getting buried under secondary information.</p>
+          </article>
+
+          <article class="alert-card">
+            <span class="alert-icon purple"><svg aria-hidden="true"><use href="#s-community"></use></svg></span>
+            <p class="alert-kicker">Community context</p>
+            <h3>Reports from the road</h3>
+            <p>Where supported, nearby community reports can add useful context about hazards, police activity, cameras, or changing road conditions.</p>
+          </article>
+
+          <article class="alert-card">
+            <span class="alert-icon mint"><svg aria-hidden="true"><use href="#s-volume"></use></svg></span>
+            <p class="alert-kicker">Eyes up</p>
+            <h3>Guidance you can hear</h3>
+            <p>Audible turn guidance and important cues reduce the need to stare at the screen, helping the app stay useful without becoming another distraction.</p>
+          </article>
+        </div>
+
+        <div class="alerts-truth-band">
+          <span><svg aria-hidden="true"><use href="#s-shield"></use></svg></span>
+          <div>
+            <b>Useful context, not a safety guarantee.</b>
+            <p>Available data and road conditions can change quickly. Always follow signs, laws, real-world conditions, and what you can actually see.</p>
+          </div>
         </div>
       </div>
     </section>
