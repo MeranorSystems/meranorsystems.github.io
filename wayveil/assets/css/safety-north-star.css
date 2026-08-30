@@ -215,3 +215,49 @@ body{
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important}
 }
+
+/* Safety hero composition refinement — desktop-first, no new assets. */
+@media screen and (min-width:1051px){
+  .safety-hero{padding:54px 0 48px}
+  .safety-hero-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:548px}
+  .safety-hero-copy{padding:4px 0 10px}
+  .safety-hero h1{font-size:clamp(3.65rem,5.55vw,5.95rem);max-width:575px;margin-bottom:20px}
+  .safety-lead{max-width:555px;margin-bottom:21px;line-height:1.64}
+  .safety-hero-note{max-width:540px;padding:14px 16px}
+  .safety-hero-art{margin:0 -78px 0 -34px;min-height:548px}
+  .safety-road-frame{inset:-4px 0 0;min-height:558px}
+  .safety-road-image{min-height:558px;object-position:60% center}
+  .safety-road-shade{background:linear-gradient(90deg,rgba(2,8,13,.60) 0%,rgba(2,8,13,.17) 27%,rgba(2,8,13,.015) 60%,rgba(2,8,13,.18) 100%),linear-gradient(180deg,rgba(2,8,13,.04),rgba(2,8,13,.02) 58%,rgba(2,8,13,.38))}
+  .safety-product-phone{right:1.5%;top:11%;width:min(36%,305px);max-height:425px;transform:rotate(.7deg)}
+  .safety-principles{left:29%;top:17%;width:202px;gap:9px}
+  .safety-principles span{min-height:62px;padding:10px 12px}
+  .safety-principles span:nth-child(2){margin-left:12px}
+  .safety-principles span:nth-child(3){margin-left:2px}
+  .safety-route-overlay{opacity:.84;transform:translateX(-11%) scaleX(.94);transform-origin:center bottom}
+  .safety-route-overlay .route-glow{stroke-width:9}
+  .safety-route-overlay .route-core{stroke-width:2.8}
+  .safety-hero-art figcaption{right:44px;bottom:9px;max-width:500px}
+  .assistive-band{margin-top:18px}
+}
+
+@media screen and (min-width:1051px) and (max-width:1250px){
+  .safety-hero-grid{grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr)}
+  .safety-hero-art{margin-right:-42px;margin-left:-20px}
+  .safety-product-phone{right:0;top:12%;width:min(34%,285px)}
+  .safety-principles{left:25%;top:16%;width:194px}
+}
+
+@media screen and (max-width:1050px){
+  .safety-product-phone{top:8%;right:2%;width:min(37%,300px);max-height:410px}
+  .safety-principles{left:18%;top:14%;width:196px}
+  .safety-route-overlay{transform:translateX(-8%);transform-origin:center bottom}
+}
+
+@media screen and (max-width:650px){
+  .safety-hero-art{min-height:385px}
+  .safety-road-frame{min-height:385px}
+  .safety-road-image{min-height:385px}
+  .safety-product-phone{right:-7%;top:15%;width:50%;max-height:300px}
+  .safety-principles{left:14px;top:20px;width:150px}
+  .safety-route-overlay{opacity:.62;transform:translateX(-10%) scaleX(.92)}
+}
