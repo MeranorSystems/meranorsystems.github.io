@@ -29,11 +29,10 @@
   };
 
   const buttons = [...demo.querySelectorAll('[data-route-mode]')];
-  const paths = [...demo.querySelectorAll('[data-route-path]')];
-  const phoneTime = demo.querySelector('[data-phone-time]');
-  const phoneMeta = demo.querySelector('[data-phone-meta]');
-  const phoneCount = demo.querySelector('[data-phone-count]');
   const status = demo.querySelector('[data-demo-status]');
+  const activeLabel = demo.querySelector('[data-active-label]');
+  const activeTime = demo.querySelector('[data-active-time]');
+  const activeCount = demo.querySelector('[data-active-count]');
 
   function selectMode(mode) {
     const choice = choices[mode];
@@ -47,13 +46,9 @@
       button.setAttribute('aria-pressed', String(selected));
     });
 
-    paths.forEach(path => {
-      path.classList.toggle('is-active', path.dataset.routePath === mode);
-    });
-
-    if (phoneTime) phoneTime.textContent = `${choice.minutes} min`;
-    if (phoneMeta) phoneMeta.textContent = `${choice.miles} mi · illustrative`;
-    if (phoneCount) phoneCount.textContent = String(choice.encounters);
+    if (activeLabel) activeLabel.textContent = choice.label;
+    if (activeTime) activeTime.textContent = `${choice.minutes} min`;
+    if (activeCount) activeCount.textContent = `${choice.encounters} known ${choice.encounters === 1 ? 'encounter' : 'encounters'}`;
     if (status) status.textContent = choice.status;
   }
 
