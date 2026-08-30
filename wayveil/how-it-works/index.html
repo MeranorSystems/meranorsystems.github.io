@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../assets/css/core.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
   <link rel="stylesheet" href="../assets/css/how-it-works-north-star.css">
+  <link rel="stylesheet" href="../assets/css/how-it-works-v4.css">
 </head>
 <body class="how-it-works-north-star">
   <svg class="svg-defs" aria-hidden="true" width="0" height="0" style="position:absolute">
@@ -86,12 +87,17 @@
                 <g transform="translate(505 328)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
               </g>
 
-              <g class="map-start"><circle cx="626" cy="66" r="18"/><path d="M618 68l16-10-6 18-4-6-6-2z"/></g>
+              <g class="map-start"><circle class="map-start-ring" cx="626" cy="66" r="18"/><circle class="map-start-core" cx="626" cy="66" r="5"/></g>
               <g class="map-destination"><circle cx="202" cy="564" r="19"/><path d="M202 577s10-9 10-18a10 10 0 10-20 0c0 9 10 18 10 18z"/><circle cx="202" cy="558" r="3.5"/></g>
             </svg>
 
             <span class="map-label start">Your location</span>
             <span class="map-label destination">Your destination</span>
+            <span class="map-place map-place-farmington">Farmington</span>
+            <span class="map-place map-place-georgetown">Georgetown</span>
+            <span class="map-shield map-shield-32">32</span>
+            <span class="map-shield map-shield-67">67</span>
+            <span class="map-shield map-shield-221">221</span>
 
             <div class="route-cards" aria-label="Illustrative route choices">
               <button class="route-card" type="button" data-route-mode="fastest" aria-pressed="false">
