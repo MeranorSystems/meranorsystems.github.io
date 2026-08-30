@@ -17,6 +17,7 @@
     <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L6 13h5l-1 9 8-12h-5V2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
     <symbol id="i-balance" viewBox="0 0 24 24"><path d="M12 4v16M7 7h10M5 7l-3 6h6L5 7zM19 7l-3 6h6l-3-6zM8 20h8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 10v6M12 7h.01" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-nav" viewBox="0 0 24 24"><path d="M4 11l16-7-7 16-2.2-6.8L4 11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
   </svg>
 
   <a class="skip-link" href="#main">Skip to content</a>
@@ -53,10 +54,44 @@
           <p class="demo-disclosure"><strong>Illustrative demo:</strong> times, distances, route geometry, locations, and encounter counts are examples — not live routing or coverage results.</p>
         </div>
 
-        <div class="hero-demo" data-route-demo>
+        <div class="hero-demo" data-route-demo data-active="zero">
           <div class="hero-stage">
-            <img class="hero-map-asset" src="../assets/img/how-it-works/how-hero-route-map.png" alt="" fetchpriority="high">
-            <div class="hero-map-scrim" aria-hidden="true"></div>
+            <div class="map-atmosphere" aria-hidden="true"></div>
+            <svg class="interactive-map" viewBox="0 0 820 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <g class="map-roads">
+                <path d="M-20 108C120 70 214 118 320 96S560 38 850 76"/>
+                <path d="M-18 188C108 226 222 186 340 198S594 266 850 216"/>
+                <path d="M-20 318C118 266 226 320 338 302S600 280 850 322"/>
+                <path d="M-20 448C114 392 232 454 366 414S620 384 850 438"/>
+                <path d="M56 -20C96 112 78 204 126 300S126 486 160 650"/>
+                <path d="M238 -20C272 86 228 202 284 304S296 512 350 650"/>
+                <path d="M456 -20C410 92 492 184 448 310S470 524 520 650"/>
+                <path d="M678 -20C618 118 692 214 650 338S634 520 716 650"/>
+                <path d="M10 560C166 532 224 572 348 554S632 520 844 562"/>
+              </g>
+              <g class="map-lights">
+                <circle cx="122" cy="164" r="2.5"/><circle cx="162" cy="196" r="1.8"/><circle cx="214" cy="146" r="2"/><circle cx="246" cy="214" r="1.6"/><circle cx="298" cy="172" r="2.2"/><circle cx="354" cy="236" r="1.7"/><circle cx="408" cy="152" r="2.5"/><circle cx="474" cy="204" r="1.8"/><circle cx="532" cy="144" r="2"/><circle cx="594" cy="210" r="2.2"/><circle cx="642" cy="168" r="1.6"/><circle cx="700" cy="238" r="2.4"/><circle cx="160" cy="352" r="2"/><circle cx="220" cy="410" r="1.6"/><circle cx="278" cy="358" r="2.3"/><circle cx="346" cy="430" r="1.8"/><circle cx="424" cy="362" r="2.1"/><circle cx="500" cy="444" r="1.7"/><circle cx="570" cy="372" r="2.4"/><circle cx="654" cy="430" r="1.8"/><circle cx="734" cy="360" r="2.2"/>
+              </g>
+
+              <path class="demo-route fastest" data-route-path="fastest" d="M626 66C560 118 526 176 492 244C458 314 400 350 344 402C302 442 260 506 202 564"/>
+              <path class="demo-route balanced" data-route-path="balanced" d="M626 66C580 122 586 188 552 252C516 318 452 348 420 410C388 472 316 520 202 564"/>
+              <path class="demo-route zero is-active" data-route-path="zero" d="M626 66C680 136 674 218 642 286C610 354 558 392 518 448C470 516 356 548 202 564"/>
+
+              <g class="camera-set" data-camera-set="fastest">
+                <g transform="translate(506 216)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
+                <g transform="translate(430 334)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
+                <g transform="translate(312 452)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
+              </g>
+              <g class="camera-set" data-camera-set="balanced">
+                <g transform="translate(505 328)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
+              </g>
+
+              <g class="map-start"><circle cx="626" cy="66" r="18"/><path d="M618 68l16-10-6 18-4-6-6-2z"/></g>
+              <g class="map-destination"><circle cx="202" cy="564" r="19"/><path d="M202 577s10-9 10-18a10 10 0 10-20 0c0 9 10 18 10 18z"/><circle cx="202" cy="558" r="3.5"/></g>
+            </svg>
+
+            <span class="map-label start">Your location</span>
+            <span class="map-label destination">Your destination</span>
 
             <div class="route-cards" aria-label="Illustrative route choices">
               <button class="route-card" type="button" data-route-mode="fastest" aria-pressed="false">
@@ -76,9 +111,24 @@
               </button>
             </div>
 
-            <figure class="hero-phone">
-              <img src="../assets/img/how-it-works/how-hero-phone.png" alt="Illustrative WayVeil navigation screen showing a mint route and zero known ALPR encounters.">
-            </figure>
+            <div class="live-phone" aria-label="Illustrative WayVeil navigation preview">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <div class="phone-status"><span>7:30</span><span>● ● ●</span></div>
+              <div class="phone-brand"><img src="../assets/img/wayveil-mark.svg" alt=""><strong>WAY<span>VEIL</span></strong></div>
+              <div class="phone-turn"><svg aria-hidden="true"><use href="#i-nav"></use></svg><div><strong data-phone-turn>Head northeast</strong><small data-phone-turn-distance>0.4 mi</small></div></div>
+              <div class="phone-map">
+                <svg viewBox="0 0 220 210" aria-hidden="true">
+                  <path class="phone-road" d="M18 42C72 58 82 92 116 104s62 38 86 82"/>
+                  <path class="phone-route fastest" data-phone-route="fastest" d="M30 178C64 138 74 112 102 94s46-26 88-62"/>
+                  <path class="phone-route balanced" data-phone-route="balanced" d="M30 178C56 146 76 118 108 108s54-40 82-76"/>
+                  <path class="phone-route zero is-active" data-phone-route="zero" d="M30 178C82 158 106 132 128 110s26-50 62-78"/>
+                  <circle cx="31" cy="178" r="8"/><path class="phone-arrow" d="M27 180l10-6-4 11-2-4-4-1z"/>
+                </svg>
+              </div>
+              <div class="phone-summary"><div><strong data-phone-time>17 min</strong><small data-phone-meta>7.4 mi · illustrative</small></div><span><svg aria-hidden="true"><use href="#i-shield"></use></svg><b data-phone-count>0</b></span></div>
+              <div class="phone-mode" data-phone-mode>Zero Known ALPR</div>
+              <div class="phone-end">End Trip</div>
+            </div>
 
             <div class="active-mode-pill" aria-hidden="true">
               <span>Viewing</span>
@@ -88,7 +138,7 @@
           </div>
 
           <div class="demo-switcher" role="group" aria-label="Try the illustrative route choices">
-            <div><strong>Try it live</strong><small>See how the route tradeoff changes.</small></div>
+            <div><strong>Try it live</strong><small>Watch the route, known encounters, and navigation preview change.</small></div>
             <button type="button" data-route-mode="fastest" aria-pressed="false"><svg aria-hidden="true"><use href="#i-bolt"></use></svg>Fastest</button>
             <button type="button" data-route-mode="balanced" aria-pressed="false"><svg aria-hidden="true"><use href="#i-balance"></use></svg>Balanced</button>
             <button class="is-selected" type="button" data-route-mode="zero" aria-pressed="true"><svg aria-hidden="true"><use href="#i-shield"></use></svg>Zero Known ALPR</button>
