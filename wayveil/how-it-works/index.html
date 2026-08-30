@@ -59,184 +59,28 @@
           <div class="hero-stage">
             <div class="map-atmosphere" aria-hidden="true"></div>
             <svg class="interactive-map" viewBox="0 0 820 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <g class="map-roads">
-                <path d="M-20 108C120 70 214 118 320 96S560 38 850 76"/>
-                <path d="M-18 188C108 226 222 186 340 198S594 266 850 216"/>
-                <path d="M-20 318C118 266 226 320 338 302S600 280 850 322"/>
-                <path d="M-20 448C114 392 232 454 366 414S620 384 850 438"/>
-                <path d="M56 -20C96 112 78 204 126 300S126 486 160 650"/>
-                <path d="M238 -20C272 86 228 202 284 304S296 512 350 650"/>
-                <path d="M456 -20C410 92 492 184 448 310S470 524 520 650"/>
-                <path d="M678 -20C618 118 692 214 650 338S634 520 716 650"/>
-                <path d="M10 560C166 532 224 572 348 554S632 520 844 562"/>
-              </g>
-              <g class="map-lights">
-                <circle cx="122" cy="164" r="2.5"/><circle cx="162" cy="196" r="1.8"/><circle cx="214" cy="146" r="2"/><circle cx="246" cy="214" r="1.6"/><circle cx="298" cy="172" r="2.2"/><circle cx="354" cy="236" r="1.7"/><circle cx="408" cy="152" r="2.5"/><circle cx="474" cy="204" r="1.8"/><circle cx="532" cy="144" r="2"/><circle cx="594" cy="210" r="2.2"/><circle cx="642" cy="168" r="1.6"/><circle cx="700" cy="238" r="2.4"/><circle cx="160" cy="352" r="2"/><circle cx="220" cy="410" r="1.6"/><circle cx="278" cy="358" r="2.3"/><circle cx="346" cy="430" r="1.8"/><circle cx="424" cy="362" r="2.1"/><circle cx="500" cy="444" r="1.7"/><circle cx="570" cy="372" r="2.4"/><circle cx="654" cy="430" r="1.8"/><circle cx="734" cy="360" r="2.2"/>
-              </g>
-
-              <path class="demo-route fastest" data-route-path="fastest" d="M626 66C560 118 526 176 492 244C458 314 400 350 344 402C302 442 260 506 202 564"/>
-              <path class="demo-route balanced" data-route-path="balanced" d="M626 66C580 122 586 188 552 252C516 318 452 348 420 410C388 472 316 520 202 564"/>
-              <path class="demo-route zero is-active" data-route-path="zero" d="M626 66C680 136 674 218 642 286C610 354 558 392 518 448C470 516 356 548 202 564"/>
-
-              <g class="camera-set" data-camera-set="fastest">
-                <g transform="translate(506 216)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
-                <g transform="translate(430 334)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
-                <g transform="translate(312 452)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
-              </g>
-              <g class="camera-set" data-camera-set="balanced">
-                <g transform="translate(505 328)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g>
-              </g>
-
-              <g class="map-start"><circle class="map-start-ring" cx="626" cy="66" r="18"/><circle class="map-start-core" cx="626" cy="66" r="5"/></g>
-              <g class="map-destination"><circle cx="202" cy="564" r="19"/><path d="M202 577s10-9 10-18a10 10 0 10-20 0c0 9 10 18 10 18z"/><circle cx="202" cy="558" r="3.5"/></g>
+              <g class="map-roads"><path d="M-20 108C120 70 214 118 320 96S560 38 850 76"/><path d="M-18 188C108 226 222 186 340 198S594 266 850 216"/><path d="M-20 318C118 266 226 320 338 302S600 280 850 322"/><path d="M-20 448C114 392 232 454 366 414S620 384 850 438"/><path d="M56 -20C96 112 78 204 126 300S126 486 160 650"/><path d="M238 -20C272 86 228 202 284 304S296 512 350 650"/><path d="M456 -20C410 92 492 184 448 310S470 524 520 650"/><path d="M678 -20C618 118 692 214 650 338S634 520 716 650"/><path d="M10 560C166 532 224 572 348 554S632 520 844 562"/></g>
+              <g class="map-lights"><circle cx="122" cy="164" r="2.5"/><circle cx="162" cy="196" r="1.8"/><circle cx="214" cy="146" r="2"/><circle cx="246" cy="214" r="1.6"/><circle cx="298" cy="172" r="2.2"/><circle cx="354" cy="236" r="1.7"/><circle cx="408" cy="152" r="2.5"/><circle cx="474" cy="204" r="1.8"/><circle cx="532" cy="144" r="2"/><circle cx="594" cy="210" r="2.2"/><circle cx="642" cy="168" r="1.6"/><circle cx="700" cy="238" r="2.4"/><circle cx="160" cy="352" r="2"/><circle cx="220" cy="410" r="1.6"/><circle cx="278" cy="358" r="2.3"/><circle cx="346" cy="430" r="1.8"/><circle cx="424" cy="362" r="2.1"/><circle cx="500" cy="444" r="1.7"/><circle cx="570" cy="372" r="2.4"/><circle cx="654" cy="430" r="1.8"/><circle cx="734" cy="360" r="2.2"/></g>
+              <path class="demo-route fastest" data-route-path="fastest" d="M626 66C560 118 526 176 492 244C458 314 400 350 344 402C302 442 260 506 202 564"/><path class="demo-route balanced" data-route-path="balanced" d="M626 66C580 122 586 188 552 252C516 318 452 348 420 410C388 472 316 520 202 564"/><path class="demo-route zero is-active" data-route-path="zero" d="M626 66C680 136 674 218 642 286C610 354 558 392 518 448C470 516 356 548 202 564"/>
+              <g class="camera-set" data-camera-set="fastest"><g transform="translate(506 216)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g><g transform="translate(430 334)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g><g transform="translate(312 452)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g></g>
+              <g class="camera-set" data-camera-set="balanced"><g transform="translate(505 328)"><circle r="13"/><path d="M-5-2h7l2-3h4l2 3h3v9h-18zM4 0a3 3 0 110 6 3 3 0 010-6z"/></g></g>
+              <g class="map-start"><circle class="map-start-ring" cx="626" cy="66" r="18"/><circle class="map-start-core" cx="626" cy="66" r="5"/></g><g class="map-destination"><circle cx="202" cy="564" r="19"/><path d="M202 577s10-9 10-18a10 10 0 10-20 0c0 9 10 18 10 18z"/><circle cx="202" cy="558" r="3.5"/></g>
             </svg>
-
-            <span class="map-label start">Your location</span>
-            <span class="map-label destination">Your destination</span>
-            <span class="map-place map-place-farmington">Farmington</span>
-            <span class="map-place map-place-georgetown">Georgetown</span>
-            <span class="map-shield map-shield-32">32</span>
-            <span class="map-shield map-shield-67">67</span>
-            <span class="map-shield map-shield-221">221</span>
-
-            <div class="route-cards" aria-label="Illustrative route choices">
-              <button class="route-card" type="button" data-route-mode="fastest" aria-pressed="false">
-                <span class="route-mode fastest"><svg aria-hidden="true"><use href="#i-bolt"></use></svg>Fastest</span>
-                <span class="route-metrics"><strong>12 <small>min</small></strong><span><b>3</b> known ALPR<br>encounters</span></span>
-                <small>6.1 mi · example</small>
-              </button>
-              <button class="route-card" type="button" data-route-mode="balanced" aria-pressed="false">
-                <span class="route-mode balanced"><svg aria-hidden="true"><use href="#i-balance"></use></svg>Balanced</span>
-                <span class="route-metrics"><strong>14 <small>min</small></strong><span><b>1</b> known ALPR<br>encounter</span></span>
-                <small>6.8 mi · example</small>
-              </button>
-              <button class="route-card is-selected" type="button" data-route-mode="zero" aria-pressed="true">
-                <span class="route-mode zero"><svg aria-hidden="true"><use href="#i-shield"></use></svg>Zero Known ALPR</span>
-                <span class="route-metrics"><strong>17 <small>min</small></strong><span><b>0</b> known ALPR<br>encounters</span></span>
-                <small>7.4 mi · example</small>
-              </button>
-            </div>
-
-            <div class="live-phone" aria-label="Illustrative WayVeil navigation preview">
-              <div class="phone-speaker" aria-hidden="true"></div>
-              <div class="phone-status"><span>7:30</span><span>● ● ●</span></div>
-              <div class="phone-brand"><img src="../assets/img/wayveil-mark.svg" alt=""><strong>WAY<span>VEIL</span></strong></div>
-              <div class="phone-turn"><svg aria-hidden="true"><use href="#i-nav"></use></svg><div><strong data-phone-turn>Head northeast</strong><small data-phone-turn-distance>0.4 mi</small></div></div>
-              <div class="phone-map">
-                <svg viewBox="0 0 220 210" aria-hidden="true">
-                  <path class="phone-road" d="M18 42C72 58 82 92 116 104s62 38 86 82"/>
-                  <path class="phone-route fastest" data-phone-route="fastest" d="M30 178C64 138 74 112 102 94s46-26 88-62"/>
-                  <path class="phone-route balanced" data-phone-route="balanced" d="M30 178C56 146 76 118 108 108s54-40 82-76"/>
-                  <path class="phone-route zero is-active" data-phone-route="zero" d="M30 178C82 158 106 132 128 110s26-50 62-78"/>
-                  <circle cx="31" cy="178" r="8"/><path class="phone-arrow" d="M27 180l10-6-4 11-2-4-4-1z"/>
-                </svg>
-              </div>
-              <div class="phone-summary"><div><strong data-phone-time>17 min</strong><small data-phone-meta>7.4 mi · illustrative</small></div><span><svg aria-hidden="true"><use href="#i-shield"></use></svg><b data-phone-count>0</b></span></div>
-              <div class="phone-mode" data-phone-mode>Zero Known ALPR</div>
-              <div class="phone-end">End Trip</div>
-            </div>
-
-            <div class="active-mode-pill" aria-hidden="true">
-              <span>Viewing</span>
-              <strong data-active-label>Zero Known ALPR</strong>
-              <small><b data-active-time>17 min</b> · <span data-active-count>0 known encounters</span></small>
-            </div>
+            <span class="map-label start">Your location</span><span class="map-label destination">Your destination</span><span class="map-place map-place-farmington">Farmington</span><span class="map-place map-place-georgetown">Georgetown</span><span class="map-shield map-shield-32">32</span><span class="map-shield map-shield-67">67</span><span class="map-shield map-shield-221">221</span>
+            <div class="route-cards" aria-label="Illustrative route choices"><button class="route-card" type="button" data-route-mode="fastest" aria-pressed="false"><span class="route-mode fastest"><svg aria-hidden="true"><use href="#i-bolt"></use></svg>Fastest</span><span class="route-metrics"><strong>12 <small>min</small></strong><span><b>3</b> known ALPR<br>encounters</span></span><small>6.1 mi · example</small></button><button class="route-card" type="button" data-route-mode="balanced" aria-pressed="false"><span class="route-mode balanced"><svg aria-hidden="true"><use href="#i-balance"></use></svg>Balanced</span><span class="route-metrics"><strong>14 <small>min</small></strong><span><b>1</b> known ALPR<br>encounter</span></span><small>6.8 mi · example</small></button><button class="route-card is-selected" type="button" data-route-mode="zero" aria-pressed="true"><span class="route-mode zero"><svg aria-hidden="true"><use href="#i-shield"></use></svg>Zero Known ALPR</span><span class="route-metrics"><strong>17 <small>min</small></strong><span><b>0</b> known ALPR<br>encounters</span></span><small>7.4 mi · example</small></button></div>
+            <div class="live-phone" aria-label="Illustrative WayVeil navigation preview"><div class="phone-speaker" aria-hidden="true"></div><div class="phone-status"><span>7:30</span><span>● ● ●</span></div><div class="phone-brand"><img src="../assets/img/wayveil-mark.svg" alt=""><strong>WAY<span>VEIL</span></strong></div><div class="phone-turn"><svg aria-hidden="true"><use href="#i-nav"></use></svg><div><strong data-phone-turn>Head northeast</strong><small data-phone-turn-distance>0.4 mi</small></div></div><div class="phone-map"><svg viewBox="0 0 220 210" aria-hidden="true"><path class="phone-road" d="M18 42C72 58 82 92 116 104s62 38 86 82"/><path class="phone-route fastest" data-phone-route="fastest" d="M30 178C64 138 74 112 102 94s46-26 88-62"/><path class="phone-route balanced" data-phone-route="balanced" d="M30 178C56 146 76 118 108 108s54-40 82-76"/><path class="phone-route zero is-active" data-phone-route="zero" d="M30 178C82 158 106 132 128 110s26-50 62-78"/><circle cx="31" cy="178" r="8"/><path class="phone-arrow" d="M27 180l10-6-4 11-2-4-4-1z"/></svg></div><div class="phone-summary"><div><strong data-phone-time>17 min</strong><small data-phone-meta>7.4 mi · illustrative</small></div><span><svg aria-hidden="true"><use href="#i-shield"></use></svg><b data-phone-count>0</b></span></div><div class="phone-mode" data-phone-mode>Zero Known ALPR</div><div class="phone-end">End Trip</div></div>
+            <div class="active-mode-pill" aria-hidden="true"><span>Viewing</span><strong data-active-label>Zero Known ALPR</strong><small><b data-active-time>17 min</b> · <span data-active-count>0 known encounters</span></small></div>
           </div>
-
-          <div class="demo-switcher" role="group" aria-label="Try the illustrative route choices">
-            <div><strong>Try it live</strong><small>Watch the route, known encounters, and navigation preview change.</small></div>
-            <button type="button" data-route-mode="fastest" aria-pressed="false"><svg aria-hidden="true"><use href="#i-bolt"></use></svg>Fastest</button>
-            <button type="button" data-route-mode="balanced" aria-pressed="false"><svg aria-hidden="true"><use href="#i-balance"></use></svg>Balanced</button>
-            <button class="is-selected" type="button" data-route-mode="zero" aria-pressed="true"><svg aria-hidden="true"><use href="#i-shield"></use></svg>Zero Known ALPR</button>
-          </div>
-          <p class="demo-status" data-demo-status aria-live="polite">Zero Known ALPR selected: illustrative 17-minute route with 0 encounters in the example known dataset.</p>
+          <div class="demo-switcher" role="group" aria-label="Try the illustrative route choices"><div><strong>Try it live</strong><small>Watch the route, known encounters, and navigation preview change.</small></div><button type="button" data-route-mode="fastest" aria-pressed="false"><svg aria-hidden="true"><use href="#i-bolt"></use></svg>Fastest</button><button type="button" data-route-mode="balanced" aria-pressed="false"><svg aria-hidden="true"><use href="#i-balance"></use></svg>Balanced</button><button class="is-selected" type="button" data-route-mode="zero" aria-pressed="true"><svg aria-hidden="true"><use href="#i-shield"></use></svg>Zero Known ALPR</button></div><p class="demo-status" data-demo-status aria-live="polite">Zero Known ALPR selected: illustrative 17-minute route with 0 encounters in the example known dataset.</p>
         </div>
       </div>
     </section>
-
-    <section class="hiw-flow-section" aria-labelledby="flow-title">
-      <div class="shell">
-        <div class="hiw-section-heading">
-          <p class="eyebrow"><span class="eyebrow-dot"></span>How It Works</p>
-          <h2 id="flow-title">Four familiar steps.<br><span>One extra layer of context.</span></h2>
-          <p>WayVeil is still navigation. The difference is that supported known exposure becomes part of the route choice before you drive.</p>
-        </div>
-
-        <div class="hiw-flow-grid">
-          <article class="hiw-step">
-            <div class="step-copy"><span>01</span><h3>Search</h3><p>Choose where you’re going, just like a normal navigation app.</p></div>
-            <div class="step-asset"><img src="../assets/img/how-it-works/how-step-search.png" alt="Illustrative WayVeil destination search interface." loading="lazy"></div>
-          </article>
-          <article class="hiw-step">
-            <div class="step-copy"><span>02</span><h3>Compare</h3><p>See the tradeoff between time and the known exposure represented in supported data.</p></div>
-            <div class="step-asset"><img src="../assets/img/how-it-works/how-step-compare.png" alt="Illustrative WayVeil route comparison with Fastest, Balanced, and Zero Known ALPR choices." loading="lazy"></div>
-          </article>
-          <article class="hiw-step">
-            <div class="step-copy"><span>03</span><h3>Choose</h3><p>You decide which route makes sense for that drive.</p></div>
-            <div class="step-asset"><img src="../assets/img/how-it-works/how-step-choose.png" alt="Illustrative WayVeil route-choice screen with Zero Known ALPR selected." loading="lazy"></div>
-          </article>
-          <article class="hiw-step">
-            <div class="step-copy"><span>04</span><h3>Drive</h3><p>WayVeil navigates normally and recalculates when needed.</p></div>
-            <div class="step-asset"><img src="../assets/img/how-it-works/how-step-drive.png" alt="Illustrative WayVeil turn-by-turn navigation screen." loading="lazy"></div>
-          </article>
-        </div>
-
-        <p class="flow-disclosure">Product visuals and route details in this section are illustrative examples.</p>
-      </div>
-    </section>
-
-    <section class="best-section" aria-labelledby="best-title">
-      <div class="shell best-panel">
-        <div class="best-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span>Best Available</p>
-          <h2 id="best-title">When a zero-known route doesn’t exist.</h2>
-          <p>Sometimes every reasonable route includes a known ALPR encounter. WayVeil should say that plainly instead of pretending otherwise.</p>
-          <p>In that case, <strong>Best Available</strong> means the supported option with the fewest known encounters among the routes being compared.</p>
-          <div class="best-truth"><svg aria-hidden="true"><use href="#i-info"></use></svg><span>“Best Available” is not surveillance-free. Unknown, new, moved, inactive, or missing devices can exist.</span></div>
-        </div>
-
-        <div class="best-example">
-          <div class="best-metrics" aria-label="Illustrative Best Available route comparison">
-            <div><span class="fastest">Fastest</span><strong>12 min</strong><b>3 <small>known encounters</small></b></div>
-            <div><span class="balanced">Balanced</span><strong>15 min</strong><b>2 <small>known encounters</small></b></div>
-            <div class="is-best"><span>Best Available</span><strong>18 min</strong><b>1 <small>known encounter</small></b></div>
-          </div>
-          <figure class="best-map">
-            <img src="../assets/img/how-it-works/how-best-available-map.png" alt="Illustrative comparison of three example routes, with Best Available showing the fewest known ALPR encounters." loading="lazy">
-          </figure>
-          <p><strong>Fewest known ALPR encounters in this example.</strong> Zero-known is not available in this illustrative trip.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="principles-section" aria-labelledby="principles-title">
-      <div class="shell">
-        <div class="principles-heading"><p class="eyebrow"><span class="eyebrow-dot"></span>Built around the drive</p><h2 id="principles-title">Privacy context without turning navigation into a cockpit.</h2></div>
-        <div class="principles-grid">
-          <article><h3>Navigation first</h3><p>Directions, route progress, and rerouting stay the primary job.</p></article>
-          <article><h3>Known means known</h3><p>WayVeil shows supported surveillance intelligence without pretending the dataset knows everything.</p></article>
-          <article><h3>You choose</h3><p>WayVeil exposes the tradeoff. The driver chooses the route.</p></article>
-          <article><h3>Local-first by design</h3><p>Privacy-sensitive navigation state is designed to remain local wherever practical.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="hiw-cta-section" aria-labelledby="hiw-cta-title">
-      <div class="shell hiw-cta-panel">
-        <div><p class="eyebrow"><span class="eyebrow-dot"></span>Next</p><h2 id="hiw-cta-title">See where WayVeil works.</h2><p>Explore the current public coverage snapshot and the known ALPR data represented there.</p></div>
-        <div class="hiw-cta-actions"><a class="button button-primary button-large" href="../coverage/">Explore Coverage <svg class="button-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="button button-secondary button-large" href="../alpha/">Join the Alpha</a></div>
-      </div>
-    </section>
+    <section class="hiw-flow-section" aria-labelledby="flow-title"><div class="shell"><div class="hiw-section-heading"><p class="eyebrow"><span class="eyebrow-dot"></span>How It Works</p><h2 id="flow-title">Four familiar steps.<br><span>One extra layer of context.</span></h2><p>WayVeil is still navigation. The difference is that supported known exposure becomes part of the route choice before you drive.</p></div><div class="hiw-flow-grid"><article class="hiw-step"><div class="step-copy"><span>01</span><h3>Search</h3><p>Choose where you’re going, just like a normal navigation app.</p></div><div class="step-asset"><img src="../assets/img/how-it-works/how-step-search.png" alt="Illustrative WayVeil destination search interface." loading="lazy"></div></article><article class="hiw-step"><div class="step-copy"><span>02</span><h3>Compare</h3><p>See the tradeoff between time and the known exposure represented in supported data.</p></div><div class="step-asset"><img src="../assets/img/how-it-works/how-step-compare.png" alt="Illustrative WayVeil route comparison with Fastest, Balanced, and Zero Known ALPR choices." loading="lazy"></div></article><article class="hiw-step"><div class="step-copy"><span>03</span><h3>Choose</h3><p>You decide which route makes sense for that drive.</p></div><div class="step-asset"><img src="../assets/img/how-it-works/how-step-choose.png" alt="Illustrative WayVeil route-choice screen with Zero Known ALPR selected." loading="lazy"></div></article><article class="hiw-step"><div class="step-copy"><span>04</span><h3>Drive</h3><p>WayVeil navigates normally and recalculates when needed.</p></div><div class="step-asset"><img src="../assets/img/how-it-works/how-step-drive.png" alt="Illustrative WayVeil turn-by-turn navigation screen." loading="lazy"></div></article></div><p class="flow-disclosure">Product visuals and route details in this section are illustrative examples.</p></div></section>
+    <section class="best-section" aria-labelledby="best-title"><div class="shell best-panel"><div class="best-copy"><p class="eyebrow"><span class="eyebrow-dot"></span>Best Available</p><h2 id="best-title">When a zero-known route doesn’t exist.</h2><p>Sometimes every reasonable route includes a known ALPR encounter. WayVeil should say that plainly instead of pretending otherwise.</p><p>In that case, <strong>Best Available</strong> means the supported option with the fewest known encounters among the routes being compared.</p><div class="best-truth"><svg aria-hidden="true"><use href="#i-info"></use></svg><span>“Best Available” is not surveillance-free. Unknown, new, moved, inactive, or missing devices can exist.</span></div></div><div class="best-example"><div class="best-metrics" aria-label="Illustrative Best Available route comparison"><div><span class="fastest">Fastest</span><strong>12 min</strong><b>3 <small>known encounters</small></b></div><div><span class="balanced">Balanced</span><strong>15 min</strong><b>2 <small>known encounters</small></b></div><div class="is-best"><span>Best Available</span><strong>18 min</strong><b>1 <small>known encounter</small></b></div></div><figure class="best-map"><img src="../assets/img/how-it-works/how-best-available-map.png" alt="Illustrative comparison of three example routes, with Best Available showing the fewest known ALPR encounters." loading="lazy"></figure><p><strong>Fewest known ALPR encounters in this example.</strong> Zero-known is not available in this illustrative trip.</p></div></div></section>
+    <section class="principles-section" aria-labelledby="principles-title"><div class="shell"><div class="principles-heading"><p class="eyebrow"><span class="eyebrow-dot"></span>Built around the drive</p><h2 id="principles-title">Privacy context without turning navigation into a cockpit.</h2></div><div class="principles-grid"><article><h3>Navigation first</h3><p>Directions, route progress, and rerouting stay the primary job.</p></article><article><h3>Known means known</h3><p>WayVeil shows supported surveillance intelligence without pretending the dataset knows everything.</p></article><article><h3>You choose</h3><p>WayVeil exposes the tradeoff. The driver chooses the route.</p></article><article><h3>Local-first by design</h3><p>Privacy-sensitive navigation state is designed to remain local wherever practical.</p></article></div></div></section>
+    <section class="hiw-cta-section" aria-labelledby="hiw-cta-title"><div class="shell hiw-cta-panel"><div><p class="eyebrow"><span class="eyebrow-dot"></span>Next</p><h2 id="hiw-cta-title">See where WayVeil works.</h2><p>Explore the current public coverage snapshot and the known ALPR data represented there.</p></div><div class="hiw-cta-actions"><a class="button button-primary button-large" href="../coverage/">Explore Coverage <svg class="button-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="button button-secondary button-large" href="../alpha/">Join the Alpha</a></div></div></section>
   </main>
-
-  <footer class="site-footer hiw-footer">
-    <div class="shell footer-grid">
-      <div class="footer-brand"><img src="../assets/img/wayveil-mark.svg" alt=""><div><strong>WAY<span>VEIL</span></strong><small>Navigate beyond surveillance.</small></div></div>
-      <nav class="footer-links" aria-label="Footer navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/">Safety</a><a href="../faq/">FAQ</a><a href="../alpha/">Alpha</a></nav>
-      <div class="footer-meta"><span>Illustrative route demo · not live navigation or coverage data</span><span>© 2026 Meranor Systems</span></div>
-    </div>
-  </footer>
-
+  <footer class="site-footer hiw-footer"><div class="shell footer-grid"><div class="footer-brand"><img src="../assets/img/wayveil-mark.svg" alt=""><div><strong>WAY<span>VEIL</span></strong><small>Navigate beyond surveillance.</small></div></div><nav class="footer-links" aria-label="Footer navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/">Safety</a><a href="../faq/">FAQ</a><a href="../alpha/">Alpha</a></nav><div class="footer-meta"><span>Illustrative route demo · not live navigation or coverage data</span><span>© 2026 Meranor Systems</span></div></div></footer>
   <script src="../assets/js/site.js" defer></script>
   <script src="../assets/js/how-it-works-demo.js" defer></script>
 </body>
