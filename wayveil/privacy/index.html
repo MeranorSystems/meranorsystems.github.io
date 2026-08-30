@@ -22,6 +22,7 @@
     <symbol id="p-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17 12v3M20 12v2"/></symbol>
     <symbol id="p-file" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6V2Z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></symbol>
     <symbol id="p-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5.3-3 8.5-8 10-5-1.5-8-4.7-8-10V6l8-3Z"/><path d="m8.5 12 2.3 2.2 4.8-5"/></symbol>
+    <symbol id="p-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.4 2"/></symbol>
   </svg>
 
   <a class="skip-link" href="#main">Skip to content</a>
@@ -129,7 +130,10 @@
 
           <div class="boundary-divider" aria-hidden="true">
             <span class="boundary-beam"></span>
-            <span class="boundary-mark"><img src="../assets/img/wayveil-mark.svg" alt=""></span>
+            <span class="boundary-mark">
+              <svg viewBox="0 0 72 82" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible"><polygon points="36,1.5 67.5,14.5 61.5,55.5 36,80.5 10.5,55.5 4.5,14.5" fill="none" stroke="rgba(122,178,201,.58)" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+              <img src="../assets/img/wayveil-mark.svg" alt="">
+            </span>
           </div>
 
           <section class="boundary-side boundary-access" aria-labelledby="access-title">
@@ -141,6 +145,7 @@
               <div><svg aria-hidden="true"><use href="#p-shield"></use></svg><b>Authorized?</b><span>Can this tester use the closed Alpha?</span></div>
               <div><svg aria-hidden="true"><use href="#p-user"></use></svg><b>Cohort</b><span>Which approved test group?</span></div>
               <div><svg aria-hidden="true"><use href="#p-file"></use></svg><b>Release</b><span>Which approved build/channel?</span></div>
+              <div><svg aria-hidden="true"><use href="#p-clock"></use></svg><b>Access window</b><span>Is this Alpha Pass still valid?</span></div>
             </div>
             <div class="boundary-pill"><svg aria-hidden="true"><use href="#p-lock"></use></svg>Does not receive private navigation content</div>
           </section>
