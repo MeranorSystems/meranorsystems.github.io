@@ -1,1 +1,249 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05090e"><meta name="description" content="WayVeil Cohort-One privacy architecture: LOCAL_GUEST navigation, separate alpha entitlement, and no raw GPS or route history in the access layer."><title>Privacy — WayVeil</title><link rel="stylesheet" href="../assets/css/core.css"><link rel="stylesheet" href="../assets/css/product.css"><link rel="stylesheet" href="../assets/css/sections.css"><link rel="stylesheet" href="../assets/css/responsive.css"></head><body><svg class="svg-defs" aria-hidden="true" width="0" height="0" style="position:absolute"><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="../" aria-label="WayVeil home"><img src="../assets/img/wayveil-mark.svg" alt=""><span class="wordmark"><span>WAY</span><strong>VEIL</strong><small>by MERANOR</small></span></a><nav class="desktop-nav" aria-label="Primary navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/" aria-current="page">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/">Safety</a><a href="../alpha/">Alpha</a></nav><a class="button button-primary header-cta" href="../alpha/">Join the Alpha</a><button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button><span></span></button></div><nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/">Safety</a><a href="../alpha/">Alpha</a><a class="button button-primary" href="../alpha/">Join the Alpha</a></nav></header><main id="main"><section class="page-hero"><div class="shell"><div class="breadcrumbs"><a href="../">WayVeil</a><span>/</span><span>Privacy</span></div><p class="eyebrow"><span class="eyebrow-dot"></span>Privacy by architecture</p><h1>Your route is not your account.</h1><p class="lead">Cohort-One access and private navigation are intentionally separate. The alpha layer may establish that you are an authorized tester; it is not allowed to become the identifier for your routes, GPS fixes, destinations, searches, or Private Session activity.</p></div></section><section class="section section-soft"><div class="shell"><div class="section-heading"><h2>What stays on the navigation side of the wall.</h2><p>The following private navigation content is outside the Cohort-One entitlement scope.</p></div><div class="card-grid"><article class="card"><span class="icon-badge">G</span><h3>Raw GPS</h3><p>The access layer is not authorized to receive raw location fixes or location trails.</p></article><article class="card"><span class="icon-badge">R</span><h3>Routes & destinations</h3><p>Origin/destination, route geometry, route history, and navigation-session history are not alpha-account data.</p></article><article class="card"><span class="icon-badge">P</span><h3>Privacy activity</h3><p>Private Session state and VeilScore / ALPR encounter history do not become tester-profile fields.</p></article></div></div></section><section class="section"><div class="shell feature-split"><div><p class="eyebrow"><span class="eyebrow-dot"></span>LOCAL_GUEST</p><h2>No cloud navigation identity required.</h2><p class="lead">For Cohort One, LOCAL_GUEST remains the accepted navigation model. Revoking alpha entitlement must not rewrite your local navigation profile into a cloud-account model or erase your local data.</p><div class="check-list"><div class="check"><span class="check-mark">✓</span><span><b>Entitlement:</b> “this tester may use the closed alpha.”</span></div><div class="check"><span class="check-mark">✓</span><span><b>Navigation:</b> stays local-first and separate.</span></div><div class="check"><span class="check-mark">✓</span><span><b>Active guidance:</b> access problems must not become a remote kill switch while you are moving.</span></div></div></div><div class="visual-panel" aria-hidden="true"><div class="orbit"></div><div class="orbit o2"></div><img src="../assets/img/wayveil-mark.svg" alt=""><span class="float-chip fc1">LOCAL_GUEST</span><span class="float-chip fc2">PRIVATE SESSION</span><span class="float-chip fc3">SEPARATE ACCESS</span></div></div></section><section class="section section-soft"><div class="shell"><div class="section-heading"><h2>What the public website does today.</h2><p>W5 remains a presentation/mocked-portal layer. The alpha-interest form is deliberately non-live until collection behavior and the hosted access contract are separately accepted.</p></div><div class="data-table"><div class="data-row"><strong>Analytics</strong><p>No marketing analytics are enabled by default.</p></div><div class="data-row"><strong>Alpha form</strong><p>Preview only in W5. Submitting it sends no network request.</p></div><div class="data-row"><strong>Secrets</strong><p>No privileged service secret may be embedded in JavaScript, static assets, manifests, or other client-readable bundles.</p></div><div class="data-row"><strong>Future collection</strong><p>Any live signup, diagnostics, sync, or account behavior requires a separate decision that describes exactly what is collected and why.</p></div></div></div></section><section class="section"><div class="shell cta-band"><div><h2>Privacy claims only matter if the data story stays honest.</h2><p>See how WayVeil presents known, probable, and uncertain surveillance data.</p></div><a class="button button-primary" href="../coverage/">Explore Coverage</a></div></section></main><footer class="site-footer"><div class="shell footer-grid"><div class="footer-brand"><img src="../assets/img/wayveil-mark.svg" alt=""><div><strong>WAY<span>VEIL</span></strong><small>Navigate beyond surveillance.</small></div></div><nav class="footer-links" aria-label="Footer navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/">Safety</a><a href="../faq/">FAQ</a><a href="../alpha/">Alpha</a></nav><div class="footer-meta"><span>WV-WEB-W5-001 · Marketing + mocked Alpha Portal</span><span>© 2026 Meranor Systems</span></div></div></footer><script src="../assets/js/site.js" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#03080d">
+  <meta name="description" content="WayVeil is designed to keep private navigation separate from closed-Alpha access, with clear boundaries around what can leave your device.">
+  <title>Privacy — WayVeil</title>
+  <link rel="stylesheet" href="../assets/css/core.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/privacy-north-star.css">
+</head>
+<body>
+  <svg class="privacy-svg-defs" aria-hidden="true" width="0" height="0">
+    <symbol id="p-pin" viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+    <symbol id="p-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="6" r="2.4"/><path d="M8.2 17c6-.5 1.6-8.8 7.5-9.8"/></symbol>
+    <symbol id="p-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.7-4 3-6 6.5-6s5.8 2 6.5 6"/></symbol>
+    <symbol id="p-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 19h2"/></symbol>
+    <symbol id="p-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="p-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></symbol>
+    <symbol id="p-map" viewBox="0 0 24 24"><path d="m3 6 5-3 8 3 5-3v15l-5 3-8-3-5 3V6Z"/><path d="M8 3v15M16 6v15"/></symbol>
+    <symbol id="p-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17 12v3M20 12v2"/></symbol>
+    <symbol id="p-file" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6V2Z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></symbol>
+    <symbol id="p-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5.3-3 8.5-8 10-5-1.5-8-4.7-8-10V6l8-3Z"/><path d="m8.5 12 2.3 2.2 4.8-5"/></symbol>
+    <symbol id="p-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.4 2"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../" aria-label="WayVeil home">
+        <img src="../assets/img/wayveil-mark.svg" alt="">
+        <span class="wordmark"><span>WAY</span><strong>VEIL</strong><small>by MERANOR</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="../how-it-works/">How It Works</a>
+        <a href="../privacy/" aria-current="page">Privacy</a>
+        <a href="../coverage/">Coverage</a>
+        <a href="../safety/">Safety</a>
+        <a href="../alpha/">Alpha</a>
+      </nav>
+      <a class="button button-primary header-cta" href="../alpha/">Join the Alpha</a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button><span></span></button>
+    </div>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <a href="../how-it-works/">How It Works</a>
+      <a href="../privacy/" aria-current="page">Privacy</a>
+      <a href="../coverage/">Coverage</a>
+      <a href="../safety/">Safety</a>
+      <a href="../alpha/">Alpha</a>
+      <a class="button button-primary" href="../alpha/">Join the Alpha</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="privacy-hero">
+      <div class="shell privacy-hero-grid">
+        <div class="privacy-hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Privacy by design</p>
+          <h1>Your drives <span>should belong to you.</span></h1>
+          <p class="privacy-lead">WayVeil is designed so using navigation doesn’t automatically create a cloud history of where you go.</p>
+
+          <div class="hero-trust-line" aria-label="Privacy principles">
+            <span><svg aria-hidden="true"><use href="#p-shield"></use></svg>Local navigation</span>
+            <span><svg aria-hidden="true"><use href="#p-lock"></use></svg>Access kept separate</span>
+            <span><svg aria-hidden="true"><use href="#p-file"></use></svg>Clear data boundaries</span>
+          </div>
+
+          <div class="hero-boundary-note">
+            <svg aria-hidden="true"><use href="#p-lock"></use></svg>
+            <span><b>Alpha access proves access — not where you drive.</b> Authorization is kept separate from navigation identity and private route state.</span>
+          </div>
+        </div>
+
+        <figure class="privacy-hero-art">
+          <div class="hero-art-glow" aria-hidden="true"></div>
+          <img src="../assets/img/privacy/privacy-hero-phone.png" alt="Illustrative WayVeil navigation interface inside a glowing privacy halo">
+          <figcaption>Illustrative interface concept — not a live route, coverage result, or product metric.</figcaption>
+        </figure>
+      </div>
+
+      <div class="shell privacy-pillars" aria-label="Privacy overview">
+        <article>
+          <span class="pillar-icon mint"><svg aria-hidden="true"><use href="#p-pin"></use></svg></span>
+          <div>
+            <h2>Your location</h2>
+            <p>Current location can power local navigation without becoming Alpha-access identity or history.</p>
+          </div>
+        </article>
+        <article>
+          <span class="pillar-icon blue"><svg aria-hidden="true"><use href="#p-route"></use></svg></span>
+          <div>
+            <h2>Your routes</h2>
+            <p>Your route choices and navigation state do not become closed-Alpha access history.</p>
+          </div>
+        </article>
+        <article>
+          <span class="pillar-icon purple"><svg aria-hidden="true"><use href="#p-user"></use></svg></span>
+          <div>
+            <h2>Your access</h2>
+            <p>Alpha authorization can confirm you may use the build. It is not your navigation identity.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="privacy-section boundary-section">
+      <div class="shell">
+        <div class="privacy-section-heading centered">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Separate by design</p>
+          <h2>Two sides. <span>One boundary.</span></h2>
+          <p>Navigation and closed-Alpha access have different jobs. WayVeil keeps those domains deliberately separate.</p>
+        </div>
+
+        <div class="boundary-board">
+          <section class="boundary-side boundary-local" aria-labelledby="local-title">
+            <div class="boundary-side-head">
+              <span class="boundary-head-icon"><svg aria-hidden="true"><use href="#p-phone"></use></svg></span>
+              <div><h3 id="local-title">On your device</h3><p>Navigation state stays in the navigation domain.</p></div>
+            </div>
+            <div class="boundary-items">
+              <div><svg aria-hidden="true"><use href="#p-pin"></use></svg><b>Current GPS</b><span>Used for active navigation</span></div>
+              <div><svg aria-hidden="true"><use href="#p-route"></use></svg><b>Routes & guidance</b><span>Calculated locally</span></div>
+              <div><svg aria-hidden="true"><use href="#p-file"></use></svg><b>Saved & recents</b><span>Local settings control persistence</span></div>
+              <div><svg aria-hidden="true"><use href="#p-shield"></use></svg><b>Private Session</b><span>Blocks prohibited route/search persistence</span></div>
+            </div>
+            <div class="boundary-pill"><svg aria-hidden="true"><use href="#p-lock"></use></svg>Private navigation does not become Alpha-access history</div>
+          </section>
+
+          <div class="boundary-divider" aria-hidden="true">
+            <span class="boundary-beam"></span>
+            <span class="boundary-mark">
+              <svg viewBox="0 0 72 82" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible"><polygon points="36,1.5 67.5,14.5 61.5,55.5 36,80.5 10.5,55.5 4.5,14.5" fill="none" stroke="rgba(122,178,201,.58)" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+              <img src="../assets/img/wayveil-mark.svg" alt="">
+            </span>
+          </div>
+
+          <section class="boundary-side boundary-access" aria-labelledby="access-title">
+            <div class="boundary-side-head">
+              <span class="boundary-head-icon"><svg aria-hidden="true"><use href="#p-key"></use></svg></span>
+              <div><h3 id="access-title">Alpha access</h3><p>Authorization only — not navigation identity.</p></div>
+            </div>
+            <div class="boundary-items">
+              <div><svg aria-hidden="true"><use href="#p-shield"></use></svg><b>Authorized?</b><span>Can this tester use the closed Alpha?</span></div>
+              <div><svg aria-hidden="true"><use href="#p-user"></use></svg><b>Cohort</b><span>Which approved test group?</span></div>
+              <div><svg aria-hidden="true"><use href="#p-file"></use></svg><b>Release</b><span>Which approved build/channel?</span></div>
+              <div><svg aria-hidden="true"><use href="#p-clock"></use></svg><b>Access window</b><span>Is this Alpha Pass still valid?</span></div>
+            </div>
+            <div class="boundary-pill"><svg aria-hidden="true"><use href="#p-lock"></use></svg>Does not receive private navigation content</div>
+          </section>
+        </div>
+
+        <aside class="private-session-note">
+          <div class="private-session-icon"><svg aria-hidden="true"><use href="#p-shield"></use></svg></div>
+          <div>
+            <p class="mini-label">Private Session</p>
+            <h3>A hard local privacy boundary.</h3>
+            <p>Private Session blocks prohibited route/search-history persistence and keeps that state out of the Alpha access layer. It does not mean network invisibility — an explicit online feature such as destination search can still make a feature-specific provider request.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="privacy-section transparency-section">
+      <div class="shell">
+        <div class="privacy-section-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Transparency</p>
+          <h2>What can leave <span>your device?</span></h2>
+          <p>Privacy is clearer when the exceptions are named. These are separate from the Alpha-access identity boundary.</p>
+        </div>
+
+        <div class="egress-grid">
+          <article>
+            <span class="egress-icon mint"><svg aria-hidden="true"><use href="#p-search"></use></svg></span>
+            <h3>Destination search</h3>
+            <p>When you explicitly search, query text may go directly to the accepted external search provider. WayVeil does not attach cohort identity, route geometry, privacy mode, VeilScore/ALPR context, trip history, GPS trail, or Private Session state.</p>
+          </article>
+
+          <article>
+            <span class="egress-icon blue"><svg aria-hidden="true"><use href="#p-map"></use></svg></span>
+            <h3>Map & regional data</h3>
+            <p>Map tiles and public regional data may be downloaded so WayVeil can render maps and maintain local/reference data. Those requests must not carry cohort identity or private route/history context.</p>
+          </article>
+
+          <article>
+            <span class="egress-icon purple"><svg aria-hidden="true"><use href="#p-key"></use></svg></span>
+            <h3>Alpha access</h3>
+            <p>The access service receives only what is required to authorize the closed Alpha. Cohort One does not authorize telemetry or automatic diagnostics upload through this layer.</p>
+          </article>
+
+          <article>
+            <span class="egress-icon amber"><svg aria-hidden="true"><use href="#p-file"></use></svg></span>
+            <h3>Feedback</h3>
+            <p>Current Cohort-One issue reporting is user-reviewed and manually handed off. No automatic issue-upload endpoint is required for the first cohort.</p>
+          </article>
+        </div>
+
+        <div class="alpha-does-not-get">
+          <span class="alpha-no-icon"><svg aria-hidden="true"><use href="#p-lock"></use></svg></span>
+          <div>
+            <b>The Alpha access layer does not receive:</b>
+            <p>raw GPS · origin/destination · search content · route geometry/history · navigation-session history · VeilScore/ALPR encounter history · trip history · Private Session state</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy-cta">
+      <div class="privacy-cta-bg" aria-hidden="true"></div>
+      <div class="privacy-cta-shade" aria-hidden="true"></div>
+      <div class="shell privacy-cta-inner">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Built around clear boundaries</p>
+          <h2>Privacy is the road. <span>You’re in control.</span></h2>
+          <p>See where WayVeil has accepted coverage today, or learn about the invite-only Alpha.</p>
+        </div>
+        <div class="privacy-cta-actions">
+          <a class="button button-secondary" href="../coverage/">Explore Coverage</a>
+          <a class="button button-primary" href="../alpha/">Learn about the Alpha</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/img/wayveil-mark.svg" alt="">
+        <div><strong>WAY<span>VEIL</span></strong><small>Navigate beyond surveillance.</small></div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../how-it-works/">How It Works</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../coverage/">Coverage</a>
+        <a href="../safety/">Safety</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../alpha/">Alpha</a>
+      </nav>
+      <div class="footer-meta">
+        <span>Privacy-first navigation by Meranor Systems</span>
+        <span>© 2026 Meranor Systems</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>
