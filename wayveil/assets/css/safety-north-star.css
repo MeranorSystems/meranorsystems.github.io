@@ -261,3 +261,155 @@ body{
   .safety-principles{left:14px;top:20px;width:150px}
   .safety-route-overlay{opacity:.62;transform:translateX(-10%) scaleX(.92)}
 }
+
+/* SAFETY-HERO-PHONE-HOTFIX-1
+   Dedicated Safety phone is the focal product object.
+   Exterior route trace is suppressed because the phone already carries route context.
+   Cards remain live HTML/CSS. No lower-page section changes.
+*/
+.safety-hero{
+  padding:58px 0 44px;
+}
+.safety-hero-grid{
+  grid-template-columns:minmax(0,.88fr) minmax(550px,1.12fr);
+  min-height:570px;
+}
+.safety-hero-copy{
+  padding:10px 0;
+}
+.safety-hero h1{
+  max-width:590px;
+  margin-bottom:22px;
+}
+.safety-lead{
+  max-width:570px;
+  margin-bottom:23px;
+}
+.safety-hero-note{
+  max-width:555px;
+}
+.safety-hero-art{
+  min-height:570px;
+  margin:0 -112px 0 -66px;
+}
+.safety-road-frame{
+  inset:-10px 0 -4px;
+  min-height:590px;
+}
+.safety-road-image{
+  min-height:590px;
+  object-position:58% center;
+}
+.safety-route-overlay{
+  display:none;
+}
+.safety-product-phone{
+  right:3.5%;
+  top:5%;
+  width:min(38%,340px);
+  max-height:500px;
+  transform:rotate(2deg);
+  filter:
+    drop-shadow(0 30px 42px rgba(0,0,0,.52))
+    drop-shadow(0 0 22px rgba(0,229,187,.10));
+}
+.safety-principles{
+  left:18%;
+  top:16%;
+  width:194px;
+  gap:9px;
+}
+.safety-principles span{
+  min-height:60px;
+  padding:10px 12px;
+  font-size:.71rem;
+}
+.safety-principles span:nth-child(2){
+  margin-left:13px;
+}
+.safety-principles span:nth-child(3){
+  margin-left:2px;
+}
+.safety-hero-art figcaption{
+  right:90px;
+  bottom:5px;
+}
+.assistive-band{
+  margin-top:14px;
+}
+
+@media screen and (max-width:1050px){
+  .safety-hero{
+    padding-top:48px;
+  }
+  .safety-hero-grid{
+    min-height:0;
+  }
+  .safety-hero-art{
+    min-height:475px;
+    margin:0 -42px;
+  }
+  .safety-road-frame,
+  .safety-road-image{
+    min-height:475px;
+  }
+  .safety-product-phone{
+    right:4%;
+    top:4%;
+    width:min(36%,300px);
+    max-height:415px;
+  }
+  .safety-principles{
+    left:13%;
+    top:13%;
+    width:184px;
+  }
+}
+
+@media screen and (max-width:820px){
+  .safety-product-phone{
+    right:0;
+    top:7%;
+    width:min(44%,285px);
+  }
+  .safety-principles{
+    left:7%;
+    top:10%;
+    width:170px;
+  }
+}
+
+@media screen and (max-width:650px){
+  .safety-hero{
+    padding:40px 0 44px;
+  }
+  .safety-hero-art{
+    min-height:390px;
+    margin:10px -24px 0;
+  }
+  .safety-road-frame,
+  .safety-road-image{
+    min-height:390px;
+  }
+  .safety-product-phone{
+    right:-4%;
+    top:8%;
+    width:49%;
+    max-height:325px;
+  }
+  .safety-principles{
+    left:14px;
+    top:22px;
+    width:145px;
+    gap:7px;
+  }
+  .safety-principles span,
+  .safety-principles span:nth-child(2),
+  .safety-principles span:nth-child(3){
+    min-height:48px;
+    margin:0;
+    padding:8px 9px;
+    grid-template-columns:25px 1fr;
+    font-size:.61rem;
+  }
+}
