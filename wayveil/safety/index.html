@@ -1,1 +1,335 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05090e"><meta name="description" content="WayVeil closed-alpha safety expectations and current PWA limitations for Cohort-One testing."><title>Safety & Alpha Limitations — WayVeil</title><link rel="stylesheet" href="../assets/css/core.css"><link rel="stylesheet" href="../assets/css/product.css"><link rel="stylesheet" href="../assets/css/sections.css"><link rel="stylesheet" href="../assets/css/responsive.css"></head><body><svg class="svg-defs" aria-hidden="true" width="0" height="0" style="position:absolute"><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="../" aria-label="WayVeil home"><img src="../assets/img/wayveil-mark.svg" alt=""><span class="wordmark"><span>WAY</span><strong>VEIL</strong><small>by MERANOR</small></span></a><nav class="desktop-nav" aria-label="Primary navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/" aria-current="page">Safety</a><a href="../alpha/">Alpha</a></nav><a class="button button-primary header-cta" href="../alpha/">Join the Alpha</a><button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button><span></span></button></div><nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/">Safety</a><a href="../alpha/">Alpha</a><a class="button button-primary" href="../alpha/">Join the Alpha</a></nav></header><main id="main"><section class="page-hero"><div class="shell"><div class="breadcrumbs"><a href="../">WayVeil</a><span>/</span><span>Safety</span></div><p class="eyebrow"><span class="eyebrow-dot"></span>Closed-alpha safety</p><h1>Set it up parked. Let guidance do the work.</h1><p class="lead">Cohort One is an alpha, not a finished App Store release. Testers follow a deliberately narrow operating envelope so product feedback never competes with driving attention.</p></div></section><section class="section section-soft"><div class="shell"><div class="safety-grid"><article class="safety-card"><span class="icon-badge">1</span><h3>Before moving</h3><ul><li>Mount the device before departure.</li><li>Choose the destination and route while parked.</li><li>Confirm location permission, current data, and voice guidance before moving.</li></ul></article><article class="safety-card warning"><span class="icon-badge">!</span><h3>While moving</h3><ul><li>Do not type, search, report, troubleshoot, update, or reconfigure.</li><li>Keep the PWA foregrounded with the screen on in the accepted Cohort-One environment.</li><li>Use voice and glanceable guidance rather than hands-on interaction.</li></ul></article><article class="safety-card"><span class="icon-badge">P</span><h3>If something goes wrong</h3><ul><li>If guidance becomes unreliable, stop relying on it.</li><li>Pull over and park safely before troubleshooting or reauthorizing.</li><li>Use manual feedback after the drive rather than debugging on the road.</li></ul></article><article class="safety-card"><span class="icon-badge">B</span><h3>Current limitations</h3><ul><li>Background/lock-screen navigation is not a Cohort-One guarantee.</li><li>True downloadable offline visual regions are not yet a supported public claim.</li><li>Live traffic is not currently an accepted feature claim.</li></ul></article></div></div></section><section class="section"><div class="shell"><div class="truth-banner"><span class="icon-badge">!</span><div><h3>Privacy routing does not outrank safe driving.</h3><p>A camera alert, VeilScore, route preference, alpha entitlement state, or data refresh should never pressure a tester to interact with the device while moving. Park first.</p></div></div></div></section><section class="section section-soft"><div class="shell"><div class="section-heading"><h2>Access control is not a remote navigation kill switch.</h2><p>If cohort access is revoked, expired, or temporarily unavailable, the distribution layer may block future sessions or require reauthorization when parked. It must not abruptly terminate active local guidance while a tester is moving.</p></div><div class="check-list"><div class="check"><span class="check-mark">✓</span><span><b>Allowed:</b> suspend new access, future sessions, or distribution of a known-bad release.</span></div><div class="check"><span class="check-mark">✓</span><span><b>Required:</b> active local guidance fails predictably and preserves local data.</span></div><div class="check"><span class="check-mark">✓</span><span><b>Tester action:</b> park before update, recovery, reauthentication, or diagnosis.</span></div></div></div></section><section class="section"><div class="shell cta-band"><div><h2>Interested in testing inside this envelope?</h2><p>Cohort One begins small so safety and product evidence stay measurable.</p></div><a class="button button-primary" href="../alpha/">Join the Alpha</a></div></section></main><footer class="site-footer"><div class="shell footer-grid"><div class="footer-brand"><img src="../assets/img/wayveil-mark.svg" alt=""><div><strong>WAY<span>VEIL</span></strong><small>Navigate beyond surveillance.</small></div></div><nav class="footer-links" aria-label="Footer navigation"><a href="../how-it-works/">How It Works</a><a href="../privacy/">Privacy</a><a href="../coverage/">Coverage</a><a href="../safety/">Safety</a><a href="../faq/">FAQ</a><a href="../alpha/">Alpha</a></nav><div class="footer-meta"><span>WV-WEB-W5-001 · Marketing + mocked Alpha Portal</span><span>© 2026 Meranor Systems</span></div></div></footer><script src="../assets/js/site.js" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#03080d">
+  <meta name="description" content="WayVeil safety principles and Alpha limitations: drive first, keep guidance glanceable, and handle setup or recovery while parked.">
+  <title>Safety — WayVeil</title>
+  <link rel="stylesheet" href="../assets/css/core.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/safety-north-star.css">
+</head>
+<body>
+  <svg class="safety-svg-defs" aria-hidden="true" width="0" height="0">
+    <symbol id="s-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5.3-3 8.5-8 10-5-1.5-8-4.7-8-10V6l8-3Z"/><path d="m8.5 12 2.3 2.2 4.8-5"/></symbol>
+    <symbol id="s-eye" viewBox="0 0 24 24"><path d="M2.5 12s3.6-6 9.5-6 9.5 6 9.5 6-3.6 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+    <symbol id="s-volume" viewBox="0 0 24 24"><path d="M5 10v4h4l5 4V6l-5 4H5Z"/><path d="M17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11"/></symbol>
+    <symbol id="s-park" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></symbol>
+    <symbol id="s-road" viewBox="0 0 24 24"><path d="M9 21 11 3M15 21 13 3M12 7v2M12 12v2M12 17v2"/></symbol>
+    <symbol id="s-turn" viewBox="0 0 24 24"><path d="M5 18h6a5 5 0 0 0 5-5V5"/><path d="m12 9 4-4 4 4"/></symbol>
+    <symbol id="s-alert" viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3Z"/><path d="M12 9v5M12 17.5v.2"/></symbol>
+    <symbol id="s-pin" viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+    <symbol id="s-tap" viewBox="0 0 24 24"><path d="M9 11V6.8a2 2 0 0 1 4 0V11"/><path d="M13 10V8.8a2 2 0 0 1 4 0V12"/><path d="M17 11a2 2 0 0 1 4 0v4c0 4-2.8 6-7 6h-1.5c-2.2 0-3.5-.8-4.8-2.4L4.4 14a2 2 0 0 1 3.1-2.5L9 13"/></symbol>
+    <symbol id="s-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17 12v3M20 12v2"/></symbol>
+    <symbol id="s-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></symbol>
+    <symbol id="s-gps" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></symbol>
+    <symbol id="s-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="14" height="11" rx="2"/><circle cx="10" cy="12.5" r="3"/><path d="m17 10 4-2v9l-4-2M6 7l1.5-2h5L14 7"/></symbol>
+    <symbol id="s-community" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c.6-4 2.6-6 6-6s5.4 2 6 6M14.5 15c3.6-.4 5.7 1.3 6.2 4.7"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../" aria-label="WayVeil home">
+        <img src="../assets/img/wayveil-mark.svg" alt="">
+        <span class="wordmark"><span>WAY</span><strong>VEIL</strong><small>by MERANOR</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="../how-it-works/">How It Works</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../coverage/">Coverage</a>
+        <a href="../safety/" aria-current="page">Safety</a>
+        <a href="../alpha/">Alpha</a>
+      </nav>
+      <a class="button button-primary header-cta" href="../alpha/">Join the Alpha</a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button><span></span></button>
+    </div>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <a href="../how-it-works/">How It Works</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../coverage/">Coverage</a>
+      <a href="../safety/" aria-current="page">Safety</a>
+      <a href="../alpha/">Alpha</a>
+      <a class="button button-primary" href="../alpha/">Join the Alpha</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="safety-hero">
+      <div class="shell safety-hero-grid">
+        <div class="safety-hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Safety by priority</p>
+          <h1>Privacy never outranks <span>safe driving.</span></h1>
+          <p class="safety-lead">WayVeil adds privacy context to navigation. It never replaces your attention, judgment, road signs, or responsibility behind the wheel.</p>
+
+          <div class="safety-hero-note">
+            <svg aria-hidden="true"><use href="#s-alert"></use></svg>
+            <p><b>If guidance seems wrong or unsafe, ignore it.</b> Continue driving safely and legally, then pull over before changing settings, searching, or troubleshooting.</p>
+          </div>
+        </div>
+
+        <figure class="safety-hero-art">
+          <div class="safety-road-frame">
+            <img class="safety-road-image" src="../assets/img/safety/safety-hero-road.png" alt="Cinematic mountain road at dusk">
+            <div class="safety-road-shade" aria-hidden="true"></div>
+            <svg class="safety-route-overlay" viewBox="0 0 900 620" aria-hidden="true" preserveAspectRatio="none">
+              <path class="route-glow" d="M858 610 C790 582 728 551 719 506 C708 454 757 423 741 390 C725 356 685 352 667 327 C648 301 659 270 680 247"/>
+              <path class="route-core" d="M858 610 C790 582 728 551 719 506 C708 454 757 423 741 390 C725 356 685 352 667 327 C648 301 659 270 680 247"/>
+              <circle class="route-pip" cx="741" cy="390" r="7"/>
+              <circle class="route-end" cx="680" cy="247" r="5"/>
+            </svg>
+
+            <img class="safety-product-phone" src="../assets/img/safety/safety-phone-navigation.png" alt="Illustrative WayVeil navigation interface">
+
+            <div class="safety-principles" aria-label="Core safety principles">
+              <span><svg aria-hidden="true"><use href="#s-eye"></use></svg><b>Drive first</b></span>
+              <span><svg aria-hidden="true"><use href="#s-volume"></use></svg><b>Glanceable guidance</b></span>
+              <span><svg aria-hidden="true"><use href="#s-park"></use></svg><b>Park to troubleshoot</b></span>
+            </div>
+          </div>
+          <figcaption>Illustrative interface and road scene — not a live route, coverage result, or safety guarantee.</figcaption>
+        </figure>
+      </div>
+
+      <div class="shell assistive-band">
+        <article>
+          <span class="assistive-icon"><svg aria-hidden="true"><use href="#s-shield"></use></svg></span>
+          <div>
+            <p class="mini-label">Assistive navigation</p>
+            <h2>WayVeil can help. You drive.</h2>
+            <p>Navigation, known-exposure context, alerts, and route suggestions are decision support. You remain responsible for controlling the vehicle and choosing a safe, legal path.</p>
+          </div>
+        </article>
+        <article class="assistive-limit">
+          <span class="assistive-icon amber"><svg aria-hidden="true"><use href="#s-alert"></use></svg></span>
+          <div>
+            <p class="mini-label amber-text">Know the limits</p>
+            <h2>Reality changes faster than any map.</h2>
+            <p>Road conditions, signs, GPS quality, construction, closures, and known surveillance data can change or be incomplete. Treat the app as context — not authority.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="safety-section priority-section">
+      <div class="shell">
+        <div class="safety-section-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Safety hierarchy</p>
+          <h2>The road gets <span>the final say.</span></h2>
+          <p>WayVeil’s driving experience should keep the most urgent information easiest to perceive. Privacy context is useful — but it belongs below the things needed to drive safely.</p>
+        </div>
+
+        <div class="priority-stack">
+          <article class="priority-row priority-road">
+            <span class="priority-num">01</span>
+            <span class="priority-icon"><svg aria-hidden="true"><use href="#s-road"></use></svg></span>
+            <div><h3>Road, law & driver judgment</h3><p>Traffic control, signs, road conditions, and your own safe judgment always come first.</p></div>
+            <span class="priority-tag">Highest priority</span>
+          </article>
+          <article class="priority-row">
+            <span class="priority-num">02</span>
+            <span class="priority-icon"><svg aria-hidden="true"><use href="#s-turn"></use></svg></span>
+            <div><h3>Maneuver guidance</h3><p>Turns, route progress, arrival, and rerouting should remain clear, glanceable, and audible.</p></div>
+            <span class="priority-tag">Primary guidance</span>
+          </article>
+          <article class="priority-row">
+            <span class="priority-num">03</span>
+            <span class="priority-icon"><svg aria-hidden="true"><use href="#s-alert"></use></svg></span>
+            <div><h3>Hazards & secondary context</h3><p>Useful alerts must not crowd out or compete with the next maneuver or safe operation of the vehicle.</p></div>
+            <span class="priority-tag">Secondary</span>
+          </article>
+          <article class="priority-row priority-privacy">
+            <span class="priority-num">04</span>
+            <span class="priority-icon"><svg aria-hidden="true"><use href="#s-pin"></use></svg></span>
+            <div><h3>Privacy context</h3><p>Known ALPR exposure can inform route choice. It never justifies a sudden, illegal, or unsafe maneuver.</p></div>
+            <span class="priority-tag">Context</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section alerts-section">
+      <div class="shell">
+        <div class="safety-section-heading alerts-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Alerts with purpose</p>
+          <h2>The right alert. <span>At the right moment.</span></h2>
+          <p>Whether you’re driving alone or carrying the people who matter most, WayVeil is designed to surface useful context without demanding your attention.</p>
+        </div>
+
+        <div class="alerts-grid">
+          <article class="alert-card">
+            <span class="alert-icon mint"><svg aria-hidden="true"><use href="#s-camera"></use></svg></span>
+            <p class="alert-kicker">Privacy awareness</p>
+            <h3>Known surveillance ahead</h3>
+            <p>When supported route data shows known ALPR exposure ahead, WayVeil can surface a clear, glanceable warning so you know what’s coming.</p>
+          </article>
+
+          <article class="alert-card">
+            <span class="alert-icon blue"><svg aria-hidden="true"><use href="#s-turn"></use></svg></span>
+            <p class="alert-kicker">Route guidance</p>
+            <h3>Route changes that matter</h3>
+            <p>When your route changes or rerouting is needed, the next driving action stays prominent instead of getting buried under secondary information.</p>
+          </article>
+
+          <article class="alert-card">
+            <span class="alert-icon purple"><svg aria-hidden="true"><use href="#s-community"></use></svg></span>
+            <p class="alert-kicker">Community context</p>
+            <h3>Reports from the road</h3>
+            <p>Where supported, nearby community reports can add useful context about hazards, police activity, cameras, or changing road conditions.</p>
+          </article>
+
+          <article class="alert-card">
+            <span class="alert-icon mint"><svg aria-hidden="true"><use href="#s-volume"></use></svg></span>
+            <p class="alert-kicker">Eyes up</p>
+            <h3>Guidance you can hear</h3>
+            <p>Audible turn guidance and important cues reduce the need to stare at the screen, helping the app stay useful without becoming another distraction.</p>
+          </article>
+        </div>
+
+        <div class="alerts-truth-band">
+          <span><svg aria-hidden="true"><use href="#s-shield"></use></svg></span>
+          <div>
+            <b>Useful context, not a safety guarantee.</b>
+            <p>Available data and road conditions can change quickly. Always follow signs, laws, real-world conditions, and what you can actually see.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section moving-section">
+      <div class="shell">
+        <div class="safety-section-heading centered">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Before and during the drive</p>
+          <h2>Set it up parked. <span>Keep it simple moving.</span></h2>
+          <p>Alpha testing is useful only when feedback never competes with driving attention.</p>
+        </div>
+
+        <div class="safety-card-grid">
+          <article class="safety-rule-card">
+            <span class="rule-icon mint"><svg aria-hidden="true"><use href="#s-park"></use></svg></span>
+            <p class="rule-kicker">Before moving</p>
+            <h3>Prepare while parked.</h3>
+            <p>Mount the device, choose your destination and route, confirm location access, and make sure audible guidance is ready before you roll.</p>
+          </article>
+
+          <article class="safety-rule-card">
+            <span class="rule-icon blue"><svg aria-hidden="true"><use href="#s-eye"></use></svg></span>
+            <p class="rule-kicker">While moving</p>
+            <h3>Keep interaction glanceable.</h3>
+            <p>Do not type, run searches, dig through settings, complete long forms, take evidence photos, or troubleshoot while driving.</p>
+          </article>
+
+          <article class="safety-rule-card">
+            <span class="rule-icon purple"><svg aria-hidden="true"><use href="#s-tap"></use></svg></span>
+            <p class="rule-kicker">Quick Report</p>
+            <h3>Quick means quick.</h3>
+            <p>If the current build offers a bounded Quick Report action, keep it to that supported low-interaction flow. Add text, photos, or details only after parking.</p>
+          </article>
+
+          <article class="safety-rule-card">
+            <span class="rule-icon mint"><svg aria-hidden="true"><use href="#s-volume"></use></svg></span>
+            <p class="rule-kicker">Solo Alpha driving</p>
+            <h3>Voice is part of the safety floor.</h3>
+            <p>Use audible guidance so the screen does not have to carry the whole navigation task. If voice is unavailable, park before reconfiguring it.</p>
+          </article>
+
+          <article class="safety-rule-card warning-card">
+            <span class="rule-icon amber"><svg aria-hidden="true"><use href="#s-alert"></use></svg></span>
+            <p class="rule-kicker amber-text">If guidance degrades</p>
+            <h3>Stop relying on it.</h3>
+            <p>If position, route, or guidance becomes unreliable, keep driving safely and legally. Pull over before diagnosing, changing the route, or recovering the app.</p>
+          </article>
+
+          <article class="safety-rule-card">
+            <span class="rule-icon blue"><svg aria-hidden="true"><use href="#s-key"></use></svg></span>
+            <p class="rule-kicker">Alpha access</p>
+            <h3>Access can wait for parked.</h3>
+            <p>Expiry, revocation, suspension, updates, recovery, or reauthorization must not become a reason to interrupt an active drive. Handle them safely after stopping.</p>
+          </article>
+        </div>
+
+        <div class="caution-band">
+          <span><svg aria-hidden="true"><use href="#s-alert"></use></svg></span>
+          <div><b>Never make an unsafe move to reduce known exposure.</b><p>Miss a turn. Take the camera encounter. Follow the road. Privacy optimization can wait; safety cannot.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section limits-section">
+      <div class="shell">
+        <div class="safety-section-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Alpha limitations</p>
+          <h2>What WayVeil <span>can’t promise.</span></h2>
+          <p>Clear limits make a better Alpha. WayVeil should surface uncertainty rather than pretending the app knows more than it does.</p>
+        </div>
+
+        <div class="limits-grid">
+          <article>
+            <span class="limit-icon"><svg aria-hidden="true"><use href="#s-data"></use></svg></span>
+            <h3>Known data is not complete reality.</h3>
+            <p>Unknown, newly installed, moved, inactive, or missing surveillance devices can exist. “0 known ALPR” never means camera-free or surveillance-free travel.</p>
+          </article>
+          <article>
+            <span class="limit-icon"><svg aria-hidden="true"><use href="#s-gps"></use></svg></span>
+            <h3>Location can be imperfect.</h3>
+            <p>GPS can drift, lag, or become coarse. WayVeil should avoid escalating weak location evidence into confident rerouting or unsafe instructions.</p>
+          </article>
+          <article>
+            <span class="limit-icon"><svg aria-hidden="true"><use href="#s-road"></use></svg></span>
+            <h3>The road can change.</h3>
+            <p>Temporary closures, construction, signs, access restrictions, and other real-world conditions may differ from the data available to the app.</p>
+          </article>
+        </div>
+
+        <div class="active-guidance-band">
+          <div class="active-guidance-icon"><svg aria-hidden="true"><use href="#s-shield"></use></svg></div>
+          <div>
+            <p class="mini-label">Active-guidance safety</p>
+            <h3>Alpha access is not a remote navigation kill switch.</h3>
+            <p>Access controls can govern future sessions, installs, or reauthorization. They must not abruptly terminate active local guidance because a lease expires, access is revoked, or a service becomes unavailable during a drive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-cta">
+      <div class="shell safety-cta-inner">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Test responsibly</p>
+          <h2>Help shape WayVeil <span>without testing your attention.</span></h2>
+          <p>Closed-Alpha testing starts small so navigation quality, privacy behavior, and safety evidence can improve together.</p>
+        </div>
+        <div class="safety-cta-actions">
+          <a class="button button-secondary" href="../how-it-works/">See How It Works</a>
+          <a class="button button-primary" href="../alpha/">Join the Alpha</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/img/wayveil-mark.svg" alt="">
+        <div><strong>WAY<span>VEIL</span></strong><small>Navigate beyond surveillance.</small></div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../how-it-works/">How It Works</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../coverage/">Coverage</a>
+        <a href="../safety/">Safety</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../alpha/">Alpha</a>
+      </nav>
+      <div class="footer-meta">
+        <span>Safety and Alpha limitations · WayVeil by Meranor Systems</span>
+        <span>© 2026 Meranor Systems</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>
